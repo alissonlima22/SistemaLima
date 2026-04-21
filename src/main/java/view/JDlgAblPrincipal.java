@@ -17,6 +17,8 @@ public class JDlgAblPrincipal extends javax.swing.JFrame {
      */
     public JDlgAblPrincipal() {
         initComponents();
+         setTitle("Sistema PetShop - Principal");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

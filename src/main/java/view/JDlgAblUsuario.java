@@ -379,7 +379,16 @@ public void habilitar(){
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        desabilitar();
+        int op = javax.swing.JOptionPane.showConfirmDialog(
+    null, 
+    "Deseja excluir?", 
+    "Confirmação", 
+    javax.swing.JOptionPane.YES_NO_OPTION
+);
+
+if (op == javax.swing.JOptionPane.YES_OPTION) {
+    // aqui vai o código de excluir
+}
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed

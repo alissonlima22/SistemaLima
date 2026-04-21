@@ -28,7 +28,54 @@ public class JDlgAblPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jBtnUsuario = new javax.swing.JMenuItem();
+        jBtnClientes = new javax.swing.JMenuItem();
+        jBtnProdutos = new javax.swing.JMenuItem();
+        jBtnPets = new javax.swing.JMenuItem();
+        jBtnFornecedor = new javax.swing.JMenuItem();
+        jBtnCompra = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jBtnVenda = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jMenu1.setText("File");
+
+        jBtnUsuario.setText("Usuario");
+        jBtnUsuario.addActionListener(this::jBtnUsuarioActionPerformed);
+        jMenu1.add(jBtnUsuario);
+
+        jBtnClientes.setText("Clientes");
+        jBtnClientes.addActionListener(this::jBtnClientesActionPerformed);
+        jMenu1.add(jBtnClientes);
+
+        jBtnProdutos.setText("Produtos");
+        jBtnProdutos.addActionListener(this::jBtnProdutosActionPerformed);
+        jMenu1.add(jBtnProdutos);
+
+        jBtnPets.setText("Pets");
+        jBtnPets.addActionListener(this::jBtnPetsActionPerformed);
+        jMenu1.add(jBtnPets);
+
+        jBtnFornecedor.setText("Fornecedor");
+        jBtnFornecedor.addActionListener(this::jBtnFornecedorActionPerformed);
+        jMenu1.add(jBtnFornecedor);
+
+        jMenuBar1.add(jMenu1);
+
+        jBtnCompra.setText("Edit");
+
+        jMenuItem6.setText("Compra");
+        jBtnCompra.add(jMenuItem6);
+
+        jBtnVenda.setText("Venda");
+        jBtnCompra.add(jBtnVenda);
+
+        jMenuBar1.add(jBtnCompra);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -38,11 +85,36 @@ public class JDlgAblPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 277, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnUsuarioActionPerformed
+        // TODO add your handling code here:
+        new JDlgAblUsuario().setVisible(true);
+    }//GEN-LAST:event_jBtnUsuarioActionPerformed
+
+    private void jBtnProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnProdutosActionPerformed
+        // TODO add your handling code here:
+            new JDlgAblProduto().setVisible(true);
+    }//GEN-LAST:event_jBtnProdutosActionPerformed
+
+    private void jBtnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnClientesActionPerformed
+        // TODO add your handling code here:
+            new JDlgAblClientes().setVisible(true);
+    }//GEN-LAST:event_jBtnClientesActionPerformed
+
+    private void jBtnPetsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPetsActionPerformed
+        // TODO add your handling code here:
+            new JDlgAblPets().setVisible(true);
+    }//GEN-LAST:event_jBtnPetsActionPerformed
+
+    private void jBtnFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFornecedorActionPerformed
+        // TODO add your handling code here:
+            new JDlgAblFornecedor().setVisible(true);
+    }//GEN-LAST:event_jBtnFornecedorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +142,15 @@ public class JDlgAblPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem jBtnClientes;
+    private javax.swing.JMenu jBtnCompra;
+    private javax.swing.JMenuItem jBtnFornecedor;
+    private javax.swing.JMenuItem jBtnPets;
+    private javax.swing.JMenuItem jBtnProdutos;
+    private javax.swing.JMenuItem jBtnUsuario;
+    private javax.swing.JMenuItem jBtnVenda;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem6;
     // End of variables declaration//GEN-END:variables
 }

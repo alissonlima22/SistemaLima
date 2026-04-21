@@ -1,5 +1,7 @@
+view\JDlgAblPets.class
 com\mycompany\sistema_adelima\Sistema_AdeLima.class
 view\JDlgAblPrincipal.class
 view\JDlgAblClientes.class
 view\JDlgAblProduto.class
+view\JDlgAblFornecedor.class
 view\JDlgAblUsuario.class

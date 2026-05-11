@@ -153,7 +153,7 @@ public void habilitar(){
         jTxtEmail = new javax.swing.JTextField();
         jLblTelefone = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel10.setText("UF");
 
@@ -181,27 +181,33 @@ public void habilitar(){
 
         jLabel3.setText("Bairro");
 
+        jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIncluir.setText("Incluir");
         jBtnIncluir.addActionListener(this::jBtnIncluirActionPerformed);
 
         jLabel2.setText("Hora do Cadastro");
 
+        jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar_1.png"))); // NOI18N
         jBtnAlterar.setText("Alterar");
         jBtnAlterar.addActionListener(this::jBtnAlterarActionPerformed);
 
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
         jBtnExcluir.addActionListener(this::jBtnExcluirActionPerformed);
 
         jLblSenha.setText("Endereço");
 
+        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
         jBtnConfirmar.addActionListener(this::jBtnConfirmarActionPerformed);
 
         jLabel7.setText("Complemento");
 
+        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
         jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
 
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
 
         jLabel8.setText("Número");
@@ -423,9 +429,7 @@ public void habilitar(){
     javax.swing.JOptionPane.YES_NO_OPTION
 );
 
-if (op == javax.swing.JOptionPane.YES_OPTION) {
-    // aqui vai o código de excluir
-}
+
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed

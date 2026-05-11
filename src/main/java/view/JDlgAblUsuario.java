@@ -93,14 +93,9 @@ public void habilitar(){
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jBtnAlterar = new javax.swing.JButton();
-        jBtnExcluir = new javax.swing.JButton();
         jLblSenha = new javax.swing.JLabel();
-        jBtnConfirmar = new javax.swing.JButton();
         jPwfSenha = new javax.swing.JPasswordField();
-        jBtnCancelar = new javax.swing.JButton();
         jCboNivel = new javax.swing.JComboBox<>();
-        jBtnPesquisar = new javax.swing.JButton();
         jLblNivel = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jChbAtivo = new javax.swing.JCheckBox();
@@ -125,31 +120,22 @@ public void habilitar(){
         jLblCpf = new javax.swing.JLabel();
         jCboGenero = new javax.swing.JComboBox<>();
         jFmtCpf = new javax.swing.JFormattedTextField();
-        jBtnIncluir = new javax.swing.JButton();
         jLblDataNasc = new javax.swing.JLabel();
         jTxtDataNasc = new javax.swing.JTextField();
+        jBtnIncluir = new javax.swing.JButton();
+        jBtnAlterar = new javax.swing.JButton();
+        jBtnExcluir = new javax.swing.JButton();
+        jBtnConfirmar = new javax.swing.JButton();
+        jBtnCancelar = new javax.swing.JButton();
+        jBtnPesquisar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jBtnAlterar.setText("Alterar");
-        jBtnAlterar.addActionListener(this::jBtnAlterarActionPerformed);
-
-        jBtnExcluir.setText("Excluir");
-        jBtnExcluir.addActionListener(this::jBtnExcluirActionPerformed);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLblSenha.setText("Senha");
 
-        jBtnConfirmar.setText("Confirmar");
-        jBtnConfirmar.addActionListener(this::jBtnConfirmarActionPerformed);
-
         jPwfSenha.setText("jPasswordField1");
 
-        jBtnCancelar.setText("Cancelar");
-        jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
-
         jCboNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jBtnPesquisar.setText("Pesquisar");
 
         jLblNivel.setText("Nivel");
 
@@ -185,12 +171,32 @@ public void habilitar(){
 
         jCboGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jBtnIncluir.setText("Incluir");
-        jBtnIncluir.addActionListener(this::jBtnIncluirActionPerformed);
-
         jLblDataNasc.setText("Data de Nascimento");
 
         jTxtDataNasc.addActionListener(this::jTxtDataNascActionPerformed);
+
+        jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnIncluir.setText("Incluir");
+        jBtnIncluir.addActionListener(this::jBtnIncluirActionPerformed);
+
+        jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar_1.png"))); // NOI18N
+        jBtnAlterar.setText("Alterar");
+        jBtnAlterar.addActionListener(this::jBtnAlterarActionPerformed);
+
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnExcluir.setText("Excluir");
+        jBtnExcluir.addActionListener(this::jBtnExcluirActionPerformed);
+
+        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jBtnConfirmar.setText("Confirmar");
+        jBtnConfirmar.addActionListener(this::jBtnConfirmarActionPerformed);
+
+        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(this::jBtnCancelarActionPerformed);
+
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnPesquisar.setText("Pesquisar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -202,7 +208,7 @@ public void habilitar(){
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLblApelido)
                     .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -260,10 +266,13 @@ public void habilitar(){
                     .addComponent(jCboCargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jTxtAcessos, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jTxtAcessos, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 6, Short.MAX_VALUE)
                         .addComponent(jBtnIncluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jBtnAlterar)
@@ -273,9 +282,9 @@ public void habilitar(){
                         .addComponent(jBtnConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jBtnCancelar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jBtnPesquisar)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -362,11 +371,6 @@ public void habilitar(){
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtNomeActionPerformed
 
-    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
-        // TODO add your handling code here:
-        habilitar();
-    }//GEN-LAST:event_jBtnCancelarActionPerformed
-
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
         habilitar();
@@ -378,23 +382,23 @@ public void habilitar(){
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
-        // TODO add your handling code here:
         int op = javax.swing.JOptionPane.showConfirmDialog(
-    null, 
-    "Deseja excluir?", 
-    "Confirmação", 
-    javax.swing.JOptionPane.YES_NO_OPTION
-);
-
-if (op == javax.swing.JOptionPane.YES_OPTION) {
-    // aqui vai o código de excluir
-}
+            null,
+            "Deseja excluir?",
+            "Confirmação",
+            javax.swing.JOptionPane.YES_NO_OPTION
+        );
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
         // TODO add your handling code here:
         desabilitar();
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
